@@ -2,32 +2,35 @@
     <head>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    
-    <!--
-        !!!!!!!!!!!!!BOOTSTRAP!!!!!!!!!!!!
-    -->
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-   <!-- 
-       !!!!!!!!!!!!!!!!!END OF BOOTSTRAPPPPPPP!!!!!!!!!!!!!!!!!!!!!!
-   -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+   
+    <script src = "./plotly.js"></script>
             
     </head>
     <body>
-        <h1>Question One:</h1>
-        <div id ="plot1"></div>
-        <h1>Question Two: </h1>
-        <div id ="plot2"></div>
-        <h1>Question Three: </h1>
-        <div id ="plot3"></div>
-        <script src = "./plotly.js">
-           
-        </script>
+        <div class = "text-center">
+            <h1><b>Question One:</b> Which strain of bacteria is most resistant to the three types of antibiotics?</h1>
+            <div id ="plot1"></div>
+            <p>EXPLANATION OF VISUALIZATION: For this, the researcher is looking for one specific type of bacteria- the most resistant type.  The researcher wants to be able to see the different bacteria across the three types of antibiotics, and be able to tell which of the types has the highest average IMC rank across the different bacteria.
+</p>
+        </div>
+                    
+        <div class = "text-center">                  
+            <h1><b>Question Two:</b> Are the Gram-positive bacteria or the Gram-negative bacteria more resistant to Penicilin?</h1>
+            <div id ="plot2"></div>
+            <p>EXPLANATION OF VISUALIZATION: For this question, the researcher is looking for trends in different types of bacteria so they can isolate which types are most resistant to bacteria and therefore might need more research, funding, etc.  For this question, the researcher wants to be able to see only the results with Penicillin (maybe the researcher gets fundung from them, I don't know!)  That means it should be easy for him to tell the minimum inhibitory concentration for each bacteria.  The researcher is interested in which bacteria have the highest MIC as this would indicate that Penicilin was least effective against that type of bacteria.  The researcher also wants to be able to quickly see whether those bacteria that are most resistant to Penicilin are Gram-positive or Gram-negative, as that might indicate a trend.</p>
+        </div>
+        
+        <div class = "text-center">
+            <h1><b>Question Three:</b> Which type of antibiotic is the most effective (compared to the other two?) on these bacteria?</h1>
+            <div id ="plot3"></div>
+            <p>EXPLANATION OF VISUALIZATION: For this, the researcher is interested in the three different antibiotics and their results across the different bacteria.  He wants to easily see what type of antiotic is causing the lowest average MIC across all the different bacteria, as that indicates the antibiotic is effective.  This is limited, since we don't have data on cost to produce, availability of antibiotic, etc. so we don't know if there are other contstraints.</p>
+        </div>
+            
+
+
     </body>
 </html>
