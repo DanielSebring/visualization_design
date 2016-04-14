@@ -1,4 +1,5 @@
-**IMPORTANT NOTE! The visualization designer is very much not a chemistry person. All visualizations were done under the assumption that not much is different between the different antibiotics and bacterial strains (or not much is known to be different) from the data it looks like that is false, as some distinct patterns emerge.**
+Live version: http://students.washington.edu/dseb/  
+**IMPORTANT NOTE! The visualization designer is very much not a chemistry person. All visualizations were done under the assumption that not much is different between the different antibiotics and bacterial strains (or not much is known to be different) from the data it looks like that is false, as some distinct patterns emerge.**  
 **Visualization Design Assignment**
 
   In our dataset we have for this assignment, we have data about different bacteria and their minimum inhibitory concentration (MIC), which measures bacteria effectiveness.  There's also data about whether the bacteria are Gram-positive or Gram-negative.  I will be asking questions of this dataset using the persona of a scientist, who's trying to find trends in what makes bacteria dangerous (as defined by being the most resistant to antibiotics.)
